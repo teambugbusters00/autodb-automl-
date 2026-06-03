@@ -39,3 +39,7 @@ coverage.xml
 # Misc
 *.log
 .env
+
+# Git Auto-Push Scripts (optional inclusion)
+# Uncomment if you don't want these tracked
+# git-auto-push.*

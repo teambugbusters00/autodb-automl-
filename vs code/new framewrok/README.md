@@ -329,3 +329,33 @@ Here is the planned development roadmap for AutoHF. Contributions and suggestion
 ## 📜 License
 
 MIT License. See `LICENSE` for details.
+
+---
+
+## 🤖 Auto-Push Scripts
+
+AutoHF includes scripts for automated git pushing:
+
+### PowerShell (Windows)
+```powershell
+.\git-auto-push.ps1 "Your commit message"
+.\git-auto-push.ps1 "Your commit message" -Push:$false  # Skip push
+```
+
+### Batch (Windows)
+```cmd
+git-auto-push.bat "Your commit message"
+git-auto-push.bat "Your commit message" nopush  # Skip push
+```
+
+### Shell/Bash (Linux/macOS/WSL)
+```bash
+./git-auto-push.sh "Your commit message"
+./git-auto-push.sh "Your commit message" nopush  # Skip push
+```
+
+These scripts automatically:
+1. Stage all changes (`git add -A`)
+2. Check for changes
+3. Commit with your message
+4. Push to the remote repository
